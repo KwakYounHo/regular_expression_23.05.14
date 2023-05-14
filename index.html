@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    fieldset {
+      width: 350px;
+    }
+    fieldset > div:nth-of-type(1) > input:nth-of-type(1) {
+      width:50px;
+    }
+    fieldset > div:nth-of-type(2) > input:nth-of-type(1) {
+      width:10px;
+    }
+    fieldset > div:nth-of-type(3) > input:nth-of-type(1) {
+      width: 100px;
+    }
+    .errorMessage {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>
+        <h1>입력해</h1>
+      </legend>
+      <div>
+        <p>주민등록번호</p>
+        <input type="text" name="firstNumber" maxlength="6">
+        <p></p>
+      </div>
+      <div>
+        -
+        <input type="text" name="secondNumber" maxlength="1">
+        ●●●●●●
+        <p></p>
+      </div>
+      <div>
+        <p>아이디</p>
+        <input type="text" name="ID" maxlength="12">
+        <p></p>
+      </div>
+      <div>
+        <p>비밀번호</p>
+        <input type="password" name="PW">
+        <p></p>
+      </div>
+      <br></bt><input type="submit" value="가즈아">
+    </fieldset>
+  </form>
+  <script src="/index.js"></script>
+</body>
+</html>

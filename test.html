@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* div:nth-child(5)가 아닌 div:nth-of-type(5)를 해야 의도한 대로 동작한다*/
+    form > div:nth-of-type(5) {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <div></div>
+    <h1></h1>
+    <div></div>
+    <h2></h2>
+    <div id="noThis"></div>
+    <h3></h3>
+    <div></div>
+    <h4></h4>
+    <div id="select"></div>
+    <h5></h5>
+    <div></div>
+    <h6></h6>
+  </form>
+</body>
+</html>
